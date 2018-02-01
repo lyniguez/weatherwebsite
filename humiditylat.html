@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"one>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<style>
+  body {background-color: rgb(228, 231, 231);}
+  h1   {color: rgb(14, 111, 122);font-style: oblique;font-weight: bold;}
+  p    {color: rgb(14, 111, 122);}
+  figure  {color: rgb(14, 111, 122);}
+ </style>
+  
+</head>
+
+<body>
+
+<!-- Navbar with dropdown and links code -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Latitude</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+      <ul class="nav navbar-nav navbar-right">
+       
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="templat.html">Max Temperature</a></li>
+            <li><a href="humiditylat.html">Humidity</a></li>
+            <li><a href="cloudinesslat.html">Cloudiness</a></li>
+            <li><a href="winlat.html">Wind Speed</a></li>
+        </ul>
+
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+        
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>  
+
+ <!-- Creates the Overall Grid -->
+ <div class="container">
+
+              <div class="row">
+                                     
+                                      <div class="col-xs-12 col-md-7">
+                                          <div class="box green">
+                                              <h1>Humidity vs Latitude</h1>
+                                              <hr>>  
+                                          <p>Humidity is at it's highest point of 80 - 100% at 0 to 20 latitude and 40 to 60 latitude</p>
+                                 
+                                       <img  alt="" width="80%" height="80%" src= "images/hum_v_lat.png">
+                                       
+                                       </div>
+                                      
+                                  
+                            </div>
+                         
+                            <div class="col-xs-12 col-md-5">
+                                <div class="box yellow">
+                                  <h2>Visualizations</h2>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-xs-3 col-md-6">
+                                      <a href="templat.html">
+                                       <img class="center" width="70%" height="70%" src= "images/temp_v_lat.png">
+                                       <figure>Temp vs Lat</figure>
+                                      </a>
+                                    </div>
+                                    <div class="col-xs-3 col-md-6">
+                                      <a href="winlat.html">
+                                      <img class="center" width="70%" height="70%" src= "images/wind_v_lat.png">
+                                      <figure>Wind vs Lat</figure>
+                                        </a>
+                                    </div>
+                                     <div class="col-xs-3 col-md-6">
+                                      <a href="humiditylat.html">
+                                      <img class="center" width="70%" height="70%" src= "images/hum_v_lat.png">
+                                      <figure>Humidity vs Lat</figure>
+                                      </a>
+                                    </div>
+                                    <div class="col-xs-3 col-md-6">
+                                      <a href="cloudinesslat.html">
+                                      <img class="center" width="70%" height="70%" src= "images/cloudiness_v_lat.png">
+                                      <figure>Cloudiness vs Lat</figure>
+                                      </a>
+                                    </div>
+                                  </div>
+                              
+                                  
+                            </div>
+                          </div>
+</body>
+</html>

@@ -22,14 +22,13 @@
 
 <style>
   body {background-color: rgb(228, 231, 231);}
-  h1   {color: rgb(14, 111, 122);font-weight: bold;}
-   p    {color: rgb(14, 111, 122);font-style: normal; font-size: large; line-height: 1.6; }
- 
-  
+  h1   {color: rgb(14, 111, 122);font-style: oblique;font-weight: bold;}
+  p    {color: rgb(14, 111, 122);}
+  figure  {color: rgb(14, 111, 122);}
+  h3 {color: rgb(14, 111, 122);font-style: oblique; font-weight: 700; text-align: center;}
  </style>
   
 </head>
-
 <body>
 
 <!-- Navbar with dropdown and links code -->
@@ -69,56 +68,45 @@
   </div><!-- /.container-fluid -->
 </nav>  
 
-
  <!-- Creates the Overall Grid -->
  <div class="container">
 
         <!-- Row 1 -->
         <div class="row">
-          <div class="col-xs-12 col-md-7">
-            <div class="box green">
-                <h1>Summary: Latitude vs X</h1>
-                <hr>
-                <img  align="left" width="45%" height="45%" src = "images/temp_v_lat.png">
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a random dataset on over 500 cities</p>
+            <div class="col-xs-12 col-md-12">
+                <div class="box comp">
+                <h1>Comparison: Latitude vs X</h1>
+          <hr>
+                <p>Click on any plot to get in-depth analysis.</p>
                 
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed</p>
-              </div>
-          </div>
+          
         
-                <div class="col-xs-12 col-md-5">
-                    <div class="box yellow">
-                      <h2>Visualizations</h2>
-                      <hr>
+               
                       <div class="row">
-                        <div class="col-xs-3 col-md-6">
-                          <a href="templat.html">
-                           <img class="center" width="70%" height="70%" src= "images/temp_v_lat.png">
-                           <figure>Temp vs Lat</figure>
-                          </a>
-                        </div>
-                        <div class="col-xs-3 col-md-6">
-                          <a href="winlat.html">
-                          <img class="center" width="70%" height="70%" src= "images/wind_v_lat.png">
-                          <figure>Wind vs Lat</figure>
-                            </a>
-                        </div>
-                         <div class="col-xs-3 col-md-6">
-                          <a href="humiditylat.html">
-                          <img class="center" width="70%" height="70%" src= "images/hum_v_lat.png">
-                          <figure>Humidity vs Lat</figure>
-                          </a>
-                        </div>
-                        <div class="col-xs-3 col-md-6">
-                          <a href="cloudinesslat.html">
-                          <img class="center" width="70%" height="70%" src= "images/cloudiness_v_lat.png">
-                          <figure>Cloudiness vs Lat</figure>
-                          </a>
-                        </div>
-                      </div>
-                  
+                          <div class="col-xs-12 col-md-6">
+                              <h3><a href="templat.html">Vs. Max Temperature</h3>
+                           <img width="85%" height="85%" src= "images/temp_v_lat.png"></a>
+                          <hr>
+                           </div>
+                          <div class="col-xs-12 col-md-6">
+                             <h3> <a href="winlat.html">Vs. Wind Speed</a></h3>
+                              <img width="85%" height="85%" src= "images/wind_v_lat.png"></a>
+                              <hr>
+                              </div>
+                          <div class="col-xs-12 col-md-6">
+                             <h3> <a href="humiditylat.html">Vs. Humidity</h3>
+                           <img  width="85%" height="85%" src= "images/hum_v_lat.png"></a>
+                           <hr>
+                           </div>
+                          <div class="col-xs-12 col-md-6">
+                             <h3> <a href="cloudinesslat.html">Vs. Cloudiness</h3>
+                             <img width="85%" height="85%" src= "images/cloudiness_v_lat.png"></a>
+                             <hr>
+                             </div>
+                           
                       
                 </div>
+              </div>
               </div>
 </body>
 </html>
